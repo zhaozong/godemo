@@ -1,6 +1,26 @@
-p, alice, data1, read
-p, bob, data2, write
-p, data2_admin, data2, read
-p, data2_admin, data2, write
+p, node1_admin, node1_data, write|read|post|get
+p, node1_user, dode1_data, read|get
+p, node2_admin, node2_data, write|read|post|get
+p, node2_user, node2_data, read|get
+p, node3_admin, node3_data, write|read|post|get
+p, longhu_member, longhu_vip, write|read|post|get
 
-g, alice, data2_admin
+g2, data11, node1_data
+g2, data12, node1_data
+g2, data21, node2_data
+g2, data31, node3_data
+g2, longhu_vip, longhu_data
+g, rokey, longhu_admin
+g, rokey1, chongqing_admin
+g, rokey2, node1_admin
+g, rokey3, node2_user
+g, rokey4, beijing_admin
+g, rokey5, node3_admin
+g, longhu_admin, chongqing_admin
+g, longhu_admin, beijing_admin
+g, chongqing_admin, node1_admin
+g, node1_admin, longhu_member
+g, chongqing_admin, node2_admin
+g, node2_admin, longhu_member
+g, beijing_admin, node3_admin
+g, node3_admin, longhu_member
